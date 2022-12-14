@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TinkRworksApplicatoinTestv1">
+
+	<listeners>
+		<listener class-name="utilities.Reporting" />
+	</listeners>
+
+	<test name="TinkRcode Test">
+		<parameter name="browser" value="chrome" />
+		<classes>   
+  		<class name ="testCases.TC_AddNewClass_004" />
+		<class name ="testCases.TC_AddStudent_006" />
+		
+		<class name ="testCases.TC_RemoveAddedStudent_007" />
+		<class name ="testCases.TC_DeleteAddedClass_004" />
+		<class name ="testCases.TC_AddNewClassWithSameName"/>
+		<class name ="testCases.TC_AddanExistingStuDiffProType"/>
+		
+		<class name ="testCases.TC_AddProgramTeacher_001" /> 
+	 	<class name ="testCases.TC_RenameProgrameTeacher_002" />
+		<class name ="testCases.TC_RenameWithoutNameTeacher" />
+		<class name ="testCases.TC_RenameProWithSameNameTeacher" />
+		<class name ="testCases.TC_DeleteProgramTeacher_003" />	
+		<class name ="testCases.TC_Type1LoginTest" />	
+		<class name ="testCases.TC_Type_1_Invalid_Tokens" />	
+		<class name ="testCases.Type2LoginTest" />
+		<class name ="testCases.TC_Type2Login_Invalid_Device_And_Invalid_Class_Code" />
+		<class name ="testCases.TC_Type2Login_Valid_Device_Code_and_Invalid_Class_Code" />
+		<class name ="testCases.TC_Type2Login_Invalid_Device_Code_and_Valid_Class_Code" />  
+		<class name ="testCases.TC_AddProStudent"/>	
+		<class name ="testCases.TC_RenameAddedProgramStudent"/>
+		<class name ="testCases.TC_DeleteProStudent"/>		
+		</classes>
+	</test>
+</suite>
+
